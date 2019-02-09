@@ -5,9 +5,10 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `darkgreen`,
+      background: `#3A4257`,
       marginBottom: `1.45rem`,
     }}
+    className="font-sans"
   >
     <div
       style={{
@@ -21,17 +22,21 @@ const Header = ({ siteTitle }) => (
       justifyContent: `space-around`,
       alignItems: `center`
     }}>
-      <h1 style={{ margin: 0 }}>
         <Link
           to="/"
-          style={{
+          css={{
             color: `white`,
             textDecoration: `none`,
+            fontSize: `1em`,
+            marginRight: `2em`,
+            transition: `all 300ms ease`,
+            ':hover': {
+              color: `red`
+            }
           }}
         >
           Home
         </Link>
-      </h1>
         <Link
           to="/projects"
           style={{
@@ -51,15 +56,6 @@ const Header = ({ siteTitle }) => (
           }}  
         >
           Resume
-        </Link>
-        <Link
-          to="/contact"
-          style={{
-            color: `white`,
-            textDecoration: `none`
-          }}  
-        >
-          Contact
         </Link>
       </div>
         
