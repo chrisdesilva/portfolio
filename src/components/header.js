@@ -4,11 +4,10 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `#3A4257`,
-      marginBottom: `1.45rem`,
+    css={{
+      background: `#1c3d5a`,
     }}
-    className="font-sans"
+    className="font-sans mb-5"
   >
     <div
       style={{
@@ -31,7 +30,7 @@ const Header = ({ siteTitle }) => (
             marginRight: `2em`,
             transition: `all 300ms ease`,
             ':hover': {
-              color: `red`
+              color: '#51d88a'
             }
           }}
         >
@@ -39,21 +38,31 @@ const Header = ({ siteTitle }) => (
         </Link>
         <Link
           to="/projects"
-          style={{
+          css={{
             color: `white`,
             textDecoration: `none`,
-            marginRight: `2em`
-          }}  
+            fontSize: `1em`,
+            marginRight: `2em`,
+            transition: `all 300ms ease`,
+            ':hover': {
+              color: '#51d88a'
+            }
+          }}
         >
           Projects
         </Link>
         <Link
           to="/resume"
-          style={{
+          css={{
             color: `white`,
             textDecoration: `none`,
-            marginRight: `2em`
-          }}  
+            fontSize: `1em`,
+            marginRight: `2em`,
+            transition: `all 300ms ease`,
+            ':hover': {
+              color: '#51d88a'
+            }
+          }}
         >
           Resume
         </Link>

@@ -8,10 +8,9 @@ import SEO from "../components/seo"
 const ResumePage = (props) => (
   <Layout>
     <SEO title="resume" keywords={[`gatsby`, `application`, `react`]} />
-    <div style={{
-        maxWidth: `800px`,
-        margin: `auto`
-      }}>
+    <div
+      className="m-auto max-w-xl" 
+    >
       <Img fluid={props.data.resume.childImageSharp.fluid} />
     </div>
   </Layout>
