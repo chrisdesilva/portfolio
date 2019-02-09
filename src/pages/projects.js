@@ -124,12 +124,28 @@ const ProjectsPage = (props) => (
               }} 
             />
           </a>
+          <a 
+            href="https://math-practice-desilva.herokuapp.com/" 
+            target="_blank"
+            className="mr-5"
+          >
+            <FaChrome 
+              className="text-3xl" 
+              css={{
+                color: `black`,
+                transition: `color 300ms ease`,
+                ':hover': {
+                  color: `#51d88a`
+                }
+              }}
+            />
+          </a>
         </div>
       </div>
       <div className="w-auto lg:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
         <Img className="w-full" fluid={props.data.beer.childImageSharp.fluid} alt="Sunset over water" />
         <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">Math Practice</div>
+          <div className="font-bold text-xl mb-2">Beer Mustache</div>
           <p className="text-grey-darker text-base">
             Web app built with the MERN stack for reviewing beers
           </p>

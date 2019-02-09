@@ -14,7 +14,21 @@ const IndexPage = (props) => (
     </div>
     <div className="flex flex-col h-64 justify-center items-center h-64 bg-green">
       <h2 className="text-left text-3xl font-normal p-2 text-black">Get in touch!</h2>
-      <h2 className="text-left text-xl font-normal p-2"><a href="mailto:chris.a.desilva@gmail.com" className="no-underline text-black">chris.a.desilva@gmail.com</a></h2>
+      <h2 className="text-left text-xl font-normal p-2">
+        <a 
+          href="mailto:chris.a.desilva@gmail.com" 
+          css={{
+            textDecoration: `none`,
+            color: `black`,
+            transition: `all 300ms ease-in-out`,
+            ':hover': {
+              color: `white`
+            }
+          }}
+        >
+          chris.a.desilva@gmail.com
+        </a>
+      </h2>
     </div>
   </Layout>
 )
