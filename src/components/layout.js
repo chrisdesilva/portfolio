@@ -35,61 +35,33 @@ const Layout = ({ children }) => (
             className="flex flex-col justify-center items-center w-full h-32 text-white bg-blue-darkest"  
           >
           <div className="text-center">
-            © {new Date().getFullYear()}, Chris DeSilva - Built with<a className="no-underline text-white" href="https://www.gatsbyjs.org"> Gatsby</a>            
+            © {new Date().getFullYear()} Chris DeSilva - Built with<a className="no-underline text-white" href="https://www.gatsbyjs.org"> Gatsby</a>            
           </div>
           <div className="mt-5">
             <a 
               href="mailto:chris.a.desilva@gmail.com"
-              className="mr-5"
-              css={{
-                color: `white`,
-                transition: `all 300ms ease`,
-                ':hover': {
-                  color: '#51d88a'
-                }
-              }}
+              className="mr-5 text-white"
             >
               <FaRegEnvelope />
             </a>
             <a 
               href="https://github.com/chrisdesilva/"
               target="_blank"
-              className="mr-5"
-              css={{
-                color: `white`,
-                transition: `all 300ms ease`,
-                ':hover': {
-                  color: '#51d88a'
-                }
-              }}
+              className="mr-5 text-white"
             >
               <FaGithub />
             </a>
             <a 
               href="https://twitter.com/ChrisDeSilva27"
               target="_blank"
-              className="mr-5"
-              css={{
-                color: `white`,
-                transition: `all 300ms ease`,
-                ':hover': {
-                  color: '#51d88a'
-                }
-              }}
+              className="mr-5 text-white"
             >
               <FaTwitter />
             </a>
             <a 
               href="https://www.linkedin.com/in/chris-desilva/"
               target="_blank"
-              className="mr-5"
-              css={{
-                color: `white`,
-                transition: `all 300ms ease`,
-                ':hover': {
-                  color: '#51d88a'
-                }
-              }}
+              className="mr-5 text-white"
             >
               <FaLinkedinIn />
             </a>
