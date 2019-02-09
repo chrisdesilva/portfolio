@@ -42,28 +42,60 @@ const Layout = ({ children }) => (
               href="mailto:chris.a.desilva@gmail.com"
               className="mr-5 text-white"
             >
-              <FaRegEnvelope />
+              <FaRegEnvelope
+                css={{
+                  color: `white`,
+                  transition: `color 300ms ease`,
+                  ':hover': {
+                    color: `#51d88a`
+                  }
+                }}
+              />
             </a>
             <a 
               href="https://github.com/chrisdesilva/"
               target="_blank"
-              className="mr-5 text-white"
+              className="mr-5"
             >
-              <FaGithub />
+              <FaGithub
+                css={{
+                  color: `white`,
+                  transition: `color 300ms ease`,
+                  ':hover': {
+                    color: `#51d88a`
+                  }
+                }}
+              />
             </a>
             <a 
               href="https://twitter.com/ChrisDeSilva27"
               target="_blank"
               className="mr-5 text-white"
             >
-              <FaTwitter />
+              <FaTwitter
+                css={{
+                  color: `white`,
+                  transition: `color 300ms ease`,
+                  ':hover': {
+                    color: `#51d88a`
+                  }
+                }} 
+              />
             </a>
             <a 
               href="https://www.linkedin.com/in/chris-desilva/"
               target="_blank"
               className="mr-5 text-white"
             >
-              <FaLinkedinIn />
+              <FaLinkedinIn 
+                css={{
+                  color: `white`,
+                  transition: `color 300ms ease`,
+                  ':hover': {
+                    color: `#51d88a`
+                  }
+                }}
+              />
             </a>
           </div>
           </footer>

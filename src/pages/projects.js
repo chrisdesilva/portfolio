@@ -23,11 +23,17 @@ const ProjectsPage = (props) => (
             href="https://github.com/chrisdesilva/The-Banisters-Website" 
             target="_blank"
             className="mr-5"
+          >
+            <FaGithub 
+              className="text-3xl" 
               css={{
                 color: `black`,
+                transition: `color 300ms ease`,
+                ':hover': {
+                  color: `#51d88a`
+                }
               }}
-          >
-            <FaGithub className="text-3xl" />
+            />
           </a>
           <a 
             href="https://www.thebanistersmusic.com" 
@@ -37,7 +43,16 @@ const ProjectsPage = (props) => (
                 color: `black`
               }}
           >
-            <FaChrome className="text-3xl" />
+            <FaChrome 
+              className="text-3xl" 
+              css={{
+                color: `black`,
+                transition: `color 300ms ease`,
+                ':hover': {
+                  color: `#51d88a`
+                }
+              }}  
+            />
           </a>
         </div>
       </div>
@@ -46,7 +61,7 @@ const ProjectsPage = (props) => (
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">mouph.com</div>
           <p className="text-grey-darker text-base">
-           Band booking agency website built with React
+           Mouphtaou Artist Management booking agency website built with React
           </p>
         </div>
         <div className="px-6 py-4 text-center">
@@ -54,21 +69,33 @@ const ProjectsPage = (props) => (
             href="https://github.com/chrisdesilva/mouph-react-app" 
             target="_blank"
             className="mr-5"
-              css={{
-                color: `black`
-              }}
           >
-            <FaGithub className="text-3xl" />
+            <FaGithub 
+              className="text-3xl"
+              css={{
+                color: `black`,
+                transition: `color 300ms ease`,
+                ':hover': {
+                  color: `#51d88a`
+                }
+              }} 
+            />
           </a>
           <a 
             href="https://www.mouph.com" 
             target="_blank"
             className="mr-5"
-              css={{
-                color: `black`
-              }}
           >
-            <FaChrome className="text-3xl" />
+            <FaChrome 
+              className="text-3xl" 
+              css={{
+                color: `black`,
+                transition: `color 300ms ease`,
+                ':hover': {
+                  color: `#51d88a`
+                }
+              }}
+            />
           </a>
         </div>
       </div>
@@ -85,11 +112,17 @@ const ProjectsPage = (props) => (
             href="https://github.com/chrisdesilva/math-flashcards-react-app" 
             target="_blank"
             className="mr-5"
-              css={{
-                color: `black`
-              }}
           >
-            <FaGithub className="text-3xl" />
+            <FaGithub 
+              className="text-3xl"
+              css={{
+                color: `black`,
+                transition: `color 300ms ease`,
+                ':hover': {
+                  color: `#51d88a`
+                }
+              }} 
+            />
           </a>
         </div>
       </div>
@@ -106,11 +139,17 @@ const ProjectsPage = (props) => (
             href="https://github.com/chrisdesilva/beer-mustache" 
             target="_blank"
             className="mr-5"
-              css={{
-                color: `black`
-              }}
           >
-            <FaGithub className="text-3xl" />
+            <FaGithub 
+              className="text-3xl"
+              css={{
+                color: `black`,
+                transition: `color 300ms ease`,
+                ':hover': {
+                  color: `#51d88a`
+                }
+              }}
+            />
           </a>
         </div>
       </div>
