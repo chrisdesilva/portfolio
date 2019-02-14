@@ -9,7 +9,7 @@ import Img from "gatsby-image"
 const ProjectsPage = (props) => (
   <Layout>
     <SEO title="Projects" />
-    <div className="flex flex-col justify-around lg:flex-row m-5">
+    <div className="flex flex-col justify-around xl:flex-row m-5">
       <div className="w-auto lg:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
         <Img className="w-full" fluid={props.data.album.childImageSharp.fluid} alt="Sunset over water" />
         <div className="px-6 py-4">
@@ -22,6 +22,7 @@ const ProjectsPage = (props) => (
           <a 
             href="https://github.com/chrisdesilva/The-Banisters-Website" 
             target="_blank"
+            rel="noopener noreferrer"
             className="mr-5"
           >
             <FaGithub 
@@ -38,6 +39,7 @@ const ProjectsPage = (props) => (
           <a 
             href="https://www.thebanistersmusic.com" 
             target="_blank"
+            rel="noopener noreferrer"
             className="mr-5"
               css={{
                 color: `black`
@@ -57,17 +59,18 @@ const ProjectsPage = (props) => (
         </div>
       </div>
       <div className="w-auto lg:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
-        <Img className="w-full" fluid={props.data.booking.childImageSharp.fluid} alt="Sunset over water" />
+        <Img className="w-full" fluid={props.data.booking.childImageSharp.fluid} alt="Pencil on open planner" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">mouph.com</div>
           <p className="text-grey-darker text-base">
-           Mouphtaou Artist Management booking agency website built with React
+           Mouphtaou Artist Management booking agency website built with React and Gatsby
           </p>
         </div>
         <div className="px-6 py-4 text-center">
           <a 
-            href="https://github.com/chrisdesilva/mouph-react-app" 
+            href="https://github.com/chrisdesilva/gatsby-mouph" 
             target="_blank"
+            rel="noopener noreferrer"
             className="mr-5"
           >
             <FaGithub 
@@ -84,6 +87,7 @@ const ProjectsPage = (props) => (
           <a 
             href="https://www.mouph.com" 
             target="_blank"
+            rel="noopener noreferrer"
             className="mr-5"
           >
             <FaChrome 
@@ -100,7 +104,7 @@ const ProjectsPage = (props) => (
         </div>
       </div>
       <div className="w-auto lg:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
-        <Img className="w-full" fluid={props.data.math.childImageSharp.fluid} alt="Sunset over water" />
+        <Img className="w-full" fluid={props.data.math.childImageSharp.fluid} alt="Pencil on math worksheet" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">Math Practice</div>
           <p className="text-grey-darker text-base">
@@ -111,6 +115,7 @@ const ProjectsPage = (props) => (
           <a 
             href="https://github.com/chrisdesilva/math-flashcards-react-app" 
             target="_blank"
+            rel="noopener noreferrer"
             className="mr-5"
           >
             <FaGithub 
@@ -127,6 +132,7 @@ const ProjectsPage = (props) => (
           <a 
             href="https://math-practice-desilva.herokuapp.com/" 
             target="_blank"
+            rel="noopener noreferrer"
             className="mr-5"
           >
             <FaChrome 
@@ -143,21 +149,39 @@ const ProjectsPage = (props) => (
         </div>
       </div>
       <div className="w-auto lg:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
-        <Img className="w-full" fluid={props.data.beer.childImageSharp.fluid} alt="Sunset over water" />
+        <Img className="w-full" fluid={props.data.history.childImageSharp.fluid} alt="History heroes app" />
         <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">Beer Mustache</div>
+          <div className="font-bold text-xl mb-2">History Heroes</div>
           <p className="text-grey-darker text-base">
-            Web app built with the MERN stack for reviewing beers
+            React app built for test review
           </p>
         </div>
         <div className="px-6 py-4 text-center">
           <a 
-            href="https://github.com/chrisdesilva/beer-mustache" 
+            href="https://github.com/chrisdesilva/history-review-game" 
             target="_blank"
+            rel="noopener noreferrer"
             className="mr-5"
           >
             <FaGithub 
               className="text-3xl"
+              css={{
+                color: `black`,
+                transition: `color 300ms ease`,
+                ':hover': {
+                  color: `#51d88a`
+                }
+              }}
+            />
+          </a>
+          <a 
+            href="https://history-review.herokuapp.com/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-5"
+          >
+            <FaChrome 
+              className="text-3xl" 
               css={{
                 color: `black`,
                 transition: `color 300ms ease`,
@@ -193,10 +217,10 @@ export const pageQuery = graphql`
     booking: file(relativePath: { eq: "booking.jpg" }) {
       ...fluidImage
     }
-    math: file(relativePath: { eq: "math.jpg" }) {
+    math: file(relativePath: { eq: "math.PNG" }) {
       ...fluidImage
     }
-    beer: file(relativePath: { eq: "beer.jpg" }) {
+    history: file(relativePath: { eq: "Historyheroes.PNG" }) {
       ...fluidImage
     }
   }
