@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
     css={{
       background: `#1c3d5a`,
     }}
-    className="font-sans mb-5"
+    className="mb-5"
   >
     <div
       style={{

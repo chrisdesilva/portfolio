@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
             gridTemplateColumns: `1fr`,
             justifyContent: `center`,
           }}
-          className="font-sans tracking-wide px-0"
+          className="tracking-wide px-0"
         >
           <main>{children}</main>
           <footer 
@@ -55,6 +55,7 @@ const Layout = ({ children }) => (
             <a 
               href="https://github.com/chrisdesilva/"
               target="_blank"
+              rel="noopener noreferrer"
               className="mr-5"
             >
               <FaGithub
@@ -70,6 +71,7 @@ const Layout = ({ children }) => (
             <a 
               href="https://twitter.com/ChrisDeSilva27"
               target="_blank"
+              rel="noopener noreferrer"
               className="mr-5 text-white"
             >
               <FaTwitter
@@ -85,6 +87,7 @@ const Layout = ({ children }) => (
             <a 
               href="https://www.linkedin.com/in/chris-desilva/"
               target="_blank"
+              rel="noopener noreferrer"
               className="mr-5 text-white"
             >
               <FaLinkedinIn 

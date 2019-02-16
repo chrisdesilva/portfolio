@@ -10,7 +10,7 @@ const ProjectsPage = (props) => (
   <Layout>
     <SEO title="Projects" />
     <div className="flex flex-col justify-around xl:flex-row m-5">
-      <div className="w-auto lg:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
+      <div className="w-auto xl:w-full rounded overflow-hidden shadow-lg lg:mx-5 my-5">
         <Img className="w-full" fluid={props.data.album.childImageSharp.fluid} alt="Sunset over water" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">thebanistersmusic.com</div>
@@ -58,7 +58,7 @@ const ProjectsPage = (props) => (
           </a>
         </div>
       </div>
-      <div className="w-auto lg:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
+      <div className="w-auto xl:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
         <Img className="w-full" fluid={props.data.booking.childImageSharp.fluid} alt="Pencil on open planner" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">mouph.com</div>
@@ -103,8 +103,8 @@ const ProjectsPage = (props) => (
           </a>
         </div>
       </div>
-      <div className="w-auto lg:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
-        <Img className="w-full" fluid={props.data.math.childImageSharp.fluid} alt="Pencil on math worksheet" />
+      <div className="w-auto xl:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
+        <Img className="w-full" fluid={props.data.math.childImageSharp.fluid} alt="Addition problem on math app" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">Math Practice</div>
           <p className="text-grey-darker text-base">
@@ -148,7 +148,7 @@ const ProjectsPage = (props) => (
           </a>
         </div>
       </div>
-      <div className="w-auto lg:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
+      <div className="w-auto xl:w-full rounded overflow-hidden shadow-lg mx-5 my-5">
         <Img className="w-full" fluid={props.data.history.childImageSharp.fluid} alt="History heroes app" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">History Heroes</div>

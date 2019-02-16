@@ -60,3 +60,9 @@
   * @import "utilities/background-patterns";
   * @import "utilities/skew-transforms";
   */
+
+  @import url('https://fonts.googleapis.com/css?family=Oswald');
+  
+  html {
+    font-family: 'Oswald', sans-serif;
+  }
